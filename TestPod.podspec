@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'TestPod'
+  s.name             = 'BlinkingLabel'
   s.version          = '0.1.0'
   s.summary          = 'An experiment creating a CocoaPod'
 
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'neugierige' => 'luyuan.nathan@gmail.com' }
   s.source           = { :git => 'https://github.com/neugierige/TestPod.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/neugierige_
+  s.social_media_url = 'https://twitter.com/neugierige_'
   s.swift_version    = '3.2'
 
   s.ios.deployment_target = '8.0'

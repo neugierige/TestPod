@@ -7,18 +7,14 @@
 //
 
 import UIKit
+import TestPod
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var blinkLabel: BlinkingLabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        blinkLabel.startBlinking()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
-
