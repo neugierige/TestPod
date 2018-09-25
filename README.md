@@ -22,6 +22,7 @@ pod 'TestPod'
 
 ## Author
 
+based on tutorial from https://code.tutsplus.com/tutorials/creating-your-first-cocoapod--cms-24332
 neugierige, luyuan.nathan@gmail.com
 
 ## License
