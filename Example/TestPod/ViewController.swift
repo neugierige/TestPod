@@ -11,10 +11,8 @@ import TestPod
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var blinkLabel: BlinkingLabel!
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        blinkLabel.startBlinking()
     }
+
 }
