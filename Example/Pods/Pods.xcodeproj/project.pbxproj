@@ -11,7 +11,8 @@
 		639364FA183D649CEC53ADB4D50B3E37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		701825ACBC2983F14188961E5CACFBE8 /* BlinkingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754990A75E801A935785F0E674DECE02 /* BlinkingLabel.swift */; };
 		8C2D430B06C5E8BCA288DC062246DD37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		99F3A3EB215AF1C20023FEF7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3A3E9215AECAE0023FEF7 /* Constants.swift */; };
+		991F71AB215BF58000C1A006 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991F71A7215BF46000C1A006 /* GlobalConstants.swift */; };
+		991F71AC215BF58400C1A006 /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991F71A9215BF46D00C1A006 /* CTAButton.swift */; };
 		ACDA1A4A131A97F8EDD2821C33F00D70 /* Pods-TestPod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D35EB08513B14D62BE67D61EF8E3756A /* Pods-TestPod_Tests-dummy.m */; };
 		B746EB87B53D2AF25FC71EEB74EAF0B3 /* TestPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1D556CFB7384B59C95276076B1AC2D6 /* TestPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB45FE3EEF4391DFC7D5C6D70AF6FCE3 /* Pods-TestPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C066812E67079904F8764F036BACEFB3 /* Pods-TestPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,7 +59,8 @@
 		81959705A4C74DC2D0A6D070D79B2223 /* Pods-TestPod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestPod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		90CCD0C679108E4F327AEE9840FFEC7B /* Pods-TestPod_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestPod_Example-resources.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99F3A3E9215AECAE0023FEF7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		991F71A7215BF46000C1A006 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalConstants.swift; path = TestPod/Classes/GlobalConstants.swift; sourceTree = "<group>"; };
+		991F71A9215BF46D00C1A006 /* CTAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTAButton.swift; path = TestPod/Classes/CTAButton.swift; sourceTree = "<group>"; };
 		A7F922FAF1CBA2EB3784AD39E281AF69 /* TestPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A887BB5D8D666A15D7AB5F7772C62D01 /* Pods-TestPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B05C3DE2442F4E6D29A4CA3A6138F182 /* Pods_TestPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,7 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				754990A75E801A935785F0E674DECE02 /* BlinkingLabel.swift */,
-				99F3A3E9215AECAE0023FEF7 /* Constants.swift */,
+				991F71A7215BF46000C1A006 /* GlobalConstants.swift */,
+				991F71A9215BF46D00C1A006 /* CTAButton.swift */,
 				E3DFC0592D278299E67B9B9C06FA9F19 /* Pod */,
 				D29DA08F4A8E3601D0E9F6D10A4F3827 /* Support Files */,
 			);
@@ -360,8 +363,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				701825ACBC2983F14188961E5CACFBE8 /* BlinkingLabel.swift in Sources */,
+				991F71AB215BF58000C1A006 /* GlobalConstants.swift in Sources */,
+				991F71AC215BF58400C1A006 /* CTAButton.swift in Sources */,
 				E6215230FF73D803EF46D2DBB335AB20 /* TestPod-dummy.m in Sources */,
-				99F3A3EB215AF1C20023FEF7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class Constants {
+public class GlobalConstants {
 
     // MARK: Spacing
     public enum Spacing: CGFloat {
@@ -18,4 +18,7 @@ public class Constants {
         case xl = 35
         case xxl = 50
     }
+
+    static let magentaColor = UIColor(red: 226/250, green: 0, blue: 116/250, alpha: 1.0)
+
 }
