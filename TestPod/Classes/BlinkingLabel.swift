@@ -9,9 +9,9 @@ import UIKit
 
 public class BlinkingLabel: UILabel {
     
-    public func startBlinking() {
+    public func startBlinking(duration: TimeInterval = 1.0) {
         let options: UIViewAnimationOptions = .repeat
-        UIView.animate(withDuration: 1.0, delay:0.0, options:options, animations: {
+        UIView.animate(withDuration: duration, delay:0.0, options:options, animations: {
             self.alpha = 0
         }, completion: nil)
     }
