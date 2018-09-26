@@ -8,45 +8,51 @@
 
 import UIKit
 
-@IBDesignable public class CTAPrimaryButton: UIButton {
+@IBDesignable
+public class CTAPrimaryButton: UIButton {
 
-    struct Constants {
+    struct CTAConstants {
         static let width: CGFloat = 280
         static let height: CGFloat = 45
-        static let topBottomInset: CGFloat = 35
         static let fontSize: CGFloat = 18
         static let cornerRadius: CGFloat = 4.0
+
+        static func buttonFrame(yPosition: CGFloat) -> CGRect {
+            let midPoint = UIScreen.main.bounds.midX
+            return CGRect(x: midPoint - CTAConstants.width/2, y: yPosition, width: CTAConstants.width, height: CTAConstants.height)
+        }
+    }
+
+    init(yPosition: CGFloat) {
+        let buttonFrame = CTAConstants.buttonFrame(yPosition: yPosition)
+        super.init(frame: buttonFrame)
+        setupView()
     }
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
-        setupView()
+        fatalError("use init(yPosition:) instead")
     }
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        frame = CTAConstants.buttonFrame(yPosition: frame.origin.y)
         setupView()
     }
 
     public override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
+        frame = CTAConstants.buttonFrame(yPosition: frame.origin.y)
         setupView()
     }
 
     func setupView() {
-        titleLabel?.font = UIFont.init(name: "ArialMT", size: Constants.fontSize)
+        titleLabel?.font = UIFont.init(name: "ArialMT", size: CTAConstants.fontSize)
         titleLabel?.textAlignment = .center
-        layer.cornerRadius = Constants.cornerRadius
+        layer.cornerRadius = CTAConstants.cornerRadius
         layer.masksToBounds = true
         backgroundColor = UIColor(red: 226/250, green: 0, blue: 116/250, alpha: 1.0)
         setTitleColor(.white, for: .normal)
-
-
-        let midPoint = UIScreen.main.bounds.midX
-        frame = CGRect(x: midPoint - Constants.width/2, y: frame.origin.y, width: Constants.width, height: Constants.height)
-        print("midpoint: \(midPoint)")
-        let edgeInsets = UIEdgeInsetsMake(Constants.topBottomInset, 0, Constants.topBottomInset, 0)
-        contentEdgeInsets = edgeInsets
     }
 
 }
