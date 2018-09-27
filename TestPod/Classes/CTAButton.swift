@@ -9,7 +9,9 @@
 import UIKit
 
 @IBDesignable
-public class CTAPrimaryButton: UIButton {
+public class CTAButton: UIButton {
+
+    var isPrimary: Bool = true
 
     struct CTAConstants {
         static let width: CGFloat = 280
@@ -46,13 +48,38 @@ public class CTAPrimaryButton: UIButton {
         setupView()
     }
 
-    func setupView() {
+    public override var isHighlighted: Bool {
+        didSet {
+            backgroundColor = isHighlighted ? GlobalConstants.Colors.magentaSelected : GlobalConstants.Colors.magentaStandard
+        }
+    }
+
+    public override var isEnabled: Bool {
+        didSet {
+            if !isEnabled {
+                backgroundColor = GlobalConstants.Colors.disabled
+            }
+        }
+    }
+
+    private func setupView() {
         titleLabel?.font = UIFont.init(name: "ArialMT", size: CTAConstants.fontSize)
         titleLabel?.textAlignment = .center
         layer.cornerRadius = CTAConstants.cornerRadius
         layer.masksToBounds = true
-        backgroundColor = UIColor(red: 226/250, green: 0, blue: 116/250, alpha: 1.0)
-        setTitleColor(.white, for: .normal)
+
+        if isPrimary {
+            backgroundColor = GlobalConstants.Colors.magentaStandard
+            setTitleColor(.white, for: .normal)
+        } else {
+            setupSecondaryView()
+        }
     }
 
+    private func setupSecondaryView() {
+        backgroundColor = .white
+        setTitleColor(GlobalConstants.Colors.magentaStandard, for: .normal)
+        setTitleColor(GlobalConstants.Colors.magentaSelected, for: .highlighted)
+        setTitleColor(GlobalConstants.Colors.disabled, for: .disabled)
+    }
 }

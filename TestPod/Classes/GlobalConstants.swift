@@ -19,6 +19,9 @@ public class GlobalConstants {
         case xxl = 50
     }
 
-    static let magentaColor = UIColor(red: 226/250, green: 0, blue: 116/250, alpha: 1.0)
-
+    struct Colors {
+        static let magentaStandard = UIColor(red: 226/250, green: 0, blue: 116/250, alpha: 1.0)
+        static let magentaSelected = UIColor(red: 186/250, green: 0, blue: 96/250, alpha: 1.0)
+        static let disabled = UIColor(red: 190/250, green: 190/250, blue: 190/250, alpha: 1.0)
+    }
 }
