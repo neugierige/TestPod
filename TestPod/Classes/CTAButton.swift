@@ -50,14 +50,14 @@ public class CTAButton: UIButton {
 
     public override var isHighlighted: Bool {
         didSet {
-            backgroundColor = isHighlighted ? GlobalConstants.Colors.magentaSelected : GlobalConstants.Colors.magentaStandard
+            backgroundColor = isHighlighted ? GlobalConstants.ButtonColors.highlighted : GlobalConstants.ButtonColors.normal
         }
     }
 
     public override var isEnabled: Bool {
         didSet {
             if !isEnabled {
-                backgroundColor = GlobalConstants.Colors.disabled
+                backgroundColor = GlobalConstants.ButtonColors.disabled
             }
         }
     }
@@ -69,7 +69,7 @@ public class CTAButton: UIButton {
         layer.masksToBounds = true
 
         if isPrimary {
-            backgroundColor = GlobalConstants.Colors.magentaStandard
+            backgroundColor = GlobalConstants.ButtonColors.normal
             setTitleColor(.white, for: .normal)
         } else {
             setupSecondaryView()
@@ -78,8 +78,8 @@ public class CTAButton: UIButton {
 
     private func setupSecondaryView() {
         backgroundColor = .white
-        setTitleColor(GlobalConstants.Colors.magentaStandard, for: .normal)
-        setTitleColor(GlobalConstants.Colors.magentaSelected, for: .highlighted)
-        setTitleColor(GlobalConstants.Colors.disabled, for: .disabled)
+        setTitleColor(GlobalConstants.ButtonColors.normal, for: .normal)
+        setTitleColor(GlobalConstants.ButtonColors.highlighted, for: .highlighted)
+        setTitleColor(GlobalConstants.ButtonColors.disabled, for: .disabled)
     }
 }

@@ -13,6 +13,7 @@
 		8C2D430B06C5E8BCA288DC062246DD37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		991F71AB215BF58000C1A006 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991F71A7215BF46000C1A006 /* GlobalConstants.swift */; };
 		991F71AC215BF58400C1A006 /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991F71A9215BF46D00C1A006 /* CTAButton.swift */; };
+		991F71C32163F66400C1A006 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991F71A7215BF46000C1A006 /* GlobalConstants.swift */; };
 		ACDA1A4A131A97F8EDD2821C33F00D70 /* Pods-TestPod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D35EB08513B14D62BE67D61EF8E3756A /* Pods-TestPod_Tests-dummy.m */; };
 		B746EB87B53D2AF25FC71EEB74EAF0B3 /* TestPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1D556CFB7384B59C95276076B1AC2D6 /* TestPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB45FE3EEF4391DFC7D5C6D70AF6FCE3 /* Pods-TestPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C066812E67079904F8764F036BACEFB3 /* Pods-TestPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -398,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991F71C32163F66400C1A006 /* GlobalConstants.swift in Sources */,
 				C2E797C45DC0F54EA44B8C9ADB09EC07 /* Pods-TestPod_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
