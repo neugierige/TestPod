@@ -61,6 +61,10 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		991F71A7215BF46000C1A006 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalConstants.swift; path = TestPod/Classes/GlobalConstants.swift; sourceTree = "<group>"; };
 		991F71A9215BF46D00C1A006 /* CTAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTAButton.swift; path = TestPod/Classes/CTAButton.swift; sourceTree = "<group>"; };
+		991F71BF2163DE6F00C1A006 /* Tele-GroteskUlt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tele-GroteskUlt.ttf"; sourceTree = "<group>"; };
+		991F71C02163DE6F00C1A006 /* Tele-GroteskFet.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tele-GroteskFet.ttf"; sourceTree = "<group>"; };
+		991F71C12163DE6F00C1A006 /* Tele-GroteskNor.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tele-GroteskNor.ttf"; sourceTree = "<group>"; };
+		991F71C22163DE6F00C1A006 /* Tele-GroteskHal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tele-GroteskHal.ttf"; sourceTree = "<group>"; };
 		A7F922FAF1CBA2EB3784AD39E281AF69 /* TestPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A887BB5D8D666A15D7AB5F7772C62D01 /* Pods-TestPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B05C3DE2442F4E6D29A4CA3A6138F182 /* Pods_TestPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +166,26 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		991F71BC2163DE6F00C1A006 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				991F71BE2163DE6F00C1A006 /* Fonts */,
+			);
+			name = Assets;
+			path = TestPod/Assets;
+			sourceTree = "<group>";
+		};
+		991F71BE2163DE6F00C1A006 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				991F71BF2163DE6F00C1A006 /* Tele-GroteskUlt.ttf */,
+				991F71C02163DE6F00C1A006 /* Tele-GroteskFet.ttf */,
+				991F71C12163DE6F00C1A006 /* Tele-GroteskNor.ttf */,
+				991F71C22163DE6F00C1A006 /* Tele-GroteskHal.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +247,7 @@
 		F4CD4436E5F95F299CAC7A66DF9CDD6C /* TestPod */ = {
 			isa = PBXGroup;
 			children = (
+				991F71BC2163DE6F00C1A006 /* Assets */,
 				754990A75E801A935785F0E674DECE02 /* BlinkingLabel.swift */,
 				991F71A7215BF46000C1A006 /* GlobalConstants.swift */,
 				991F71A9215BF46D00C1A006 /* CTAButton.swift */,
