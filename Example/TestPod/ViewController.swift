@@ -11,9 +11,13 @@ import TestPod
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var primaryButton: CTAPrimaryButton!
+    @IBOutlet weak var secondaryButton: CTASecondaryButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = GlobalConstants.FontColors.pFont
+        primaryButton.isEnabled = false
+        secondaryButton.isEnabled = false
     }
 
 }
