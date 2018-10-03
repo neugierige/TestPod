@@ -52,26 +52,37 @@ public class GlobalConstants {
 
 
     // MARK: Fonts
-    private enum TeleGroteskFontNames: String {
+    enum TeleGroteskFontNames: String {
         case fet = "Tele-GroteskFet"
         case hal = "Tele-GroteskHal"
         case nor = "Tele-GroteskNor"
         case ult = "Tele-GroteskUlt"
     }
 
+    static let arialName = "ArialMT"
+
     public enum HFontSizes {
         case h1Heading, h2Heading, h3Heading, h5Heading, h6Heading, h7Subheading
+
+        var style: TeleGroteskFontNames {
+            switch self {
+            case .h1Heading, .h2Heading, .h3Heading, .h5Heading: return .fet
+            case .h6Heading, .h7Subheading: return .hal
+            }
+        }
+
+        var pointSize: CGFloat {
+            switch self {
+            case .h1Heading: return 50
+            case .h2Heading: return 40
+            case .h3Heading: return 32
+            case .h5Heading, .h6Heading, .h7Subheading: return 24
+            }
+        }
     }
 
     public func hFont(for size: HFontSizes) -> UIFont? {
-        switch size {
-        case .h1Heading: return UIFont(name: TeleGroteskFontNames.fet.rawValue, size: 50)
-        case .h2Heading: return UIFont(name: TeleGroteskFontNames.fet.rawValue, size: 40)
-        case .h3Heading: return UIFont(name: TeleGroteskFontNames.fet.rawValue, size: 32)
-        case .h5Heading: return UIFont(name: TeleGroteskFontNames.fet.rawValue, size: 24)
-        case .h6Heading: return UIFont(name: TeleGroteskFontNames.hal.rawValue, size: 24)
-        case .h7Subheading: return UIFont(name: TeleGroteskFontNames.hal.rawValue, size: 24)
-        }
+        return UIFont(name: size.style.rawValue, size: size.pointSize)
     }
 
     public enum ArialFontSizes: CGFloat {
@@ -83,14 +94,7 @@ public class GlobalConstants {
     }
 
     public func arialFont(size: ArialFontSizes) -> UIFont? {
-        let arialName = "ArialMT"
-        switch size {
-        case .lead: return UIFont(name: arialName, size: size.rawValue)
-        case .regular: return UIFont(name: arialName, size: size.rawValue)
-        case .small: return UIFont(name: arialName, size: size.rawValue)
-        case .xsmall: return UIFont(name: arialName, size: size.rawValue)
-        case .legal: return UIFont(name: arialName, size: size.rawValue)
-        }
+        return UIFont(name: GlobalConstants.arialName, size: size.rawValue)
     }
 
 }
