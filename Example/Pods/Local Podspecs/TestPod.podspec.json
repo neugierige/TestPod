@@ -20,5 +20,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "TestPod/Classes/**/*"
+  "source_files": "TestPod/Classes/**/*",
+  "resource_bundles": {
+    "TestPod": [
+      "TestPod/Assets/**/*.{ttf}"
+    ]
+  }
 }

@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'BlinkingLabel'
+  s.name             = 'TestPod'
   s.version          = '0.1.0'
   s.summary          = 'An experiment creating a CocoaPod'
 
@@ -33,9 +33,10 @@ Pod::Spec.new do |s|
 
   s.source_files = 'TestPod/Classes/**/*'
   
-  # s.resource_bundles = {
+   s.resource_bundles = {
+       'TestPod' => ['TestPod/Assets/**/*.{ttf}']
   #   'TestPod' => ['TestPod/Assets/*.png']
-  # }
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
