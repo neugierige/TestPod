@@ -11,16 +11,17 @@ import UIKit
 class MasterViewController: UITableViewController {
 
     let components: [Component] = [
-        Component(title: "CTAs", patternID: "17", storyboardID: "CTAPrimaryButton", viewControllerTitle: "CTAsViewController"),
-        Component(title: "Secondary CTA", patternID: "18", storyboardID: "CTASecondaryButton", viewControllerTitle: "CTAsViewController")]
+        Component(name: "CTAs", patternID: "17", storyboardID: nil),
+        Component(name: "Secondary CTA", patternID: "18", storyboardID: nil)]
+
     let componentCategories: [ComponentCategory] = [
-        ComponentCategory(componentCategoryTitle: "Buttons", subtitle: nil, usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: []),
-        ComponentCategory(componentCategoryTitle: "Typography", subtitle: "Heading, paragraph, links", usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: [])
+        ComponentCategory(categoryName: "Buttons", subtitle: "View that have touch recognizer", storyboardID: "CTAsViewController", usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: []),
+        ComponentCategory(categoryName: "Typography", subtitle: "Heading, paragraph, links", storyboardID: "TypographyViewController", usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: [])
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        splitViewController?.preferredDisplayMode = .allVisible
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -38,44 +39,19 @@ class MasterViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         let componentCategory = componentCategories[indexPath.row]
-        cell.textLabel?.text = componentCategory.componentCategoryTitle
+        cell.textLabel?.text = componentCategory.categoryName
         return cell
     }
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboardName = componentCategories[indexPath.row].storyboardID
+        let componentStoryboard = UIStoryboard(name: storyboardName, bundle: nil)
+        if let componentViewController = componentStoryboard.instantiateInitialViewController() {
+            splitViewController?.showDetailViewController(componentViewController, sender: nil)
+        } else {
+            print("no VC for \(storyboardName)")
+        }
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     /*
     // MARK: - Navigation

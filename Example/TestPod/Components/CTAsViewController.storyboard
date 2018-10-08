@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o0Z-KB-BCH">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--As View Controller-->
+        <scene sceneID="IXf-Pb-JbJ">
+            <objects>
+                <viewController id="o0Z-KB-BCH" customClass="CTAsViewController" customModule="TestPod_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2mx-ZL-tCf">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="iOk-5J-EE9">
+                                <rect key="frame" x="86.5" y="944" width="595" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yS1-9Q-dZP" customClass="CTASecondaryButton" customModule="TestPod">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="6UD-CS-jAc"/>
+                                            <constraint firstAttribute="width" constant="280" id="GUO-gu-a1p"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cb-IX-Tzy" customClass="CTAPrimaryButton" customModule="TestPod">
+                                        <rect key="frame" x="315" y="0.0" width="280" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="Krw-Gv-Ef8"/>
+                                            <constraint firstAttribute="height" constant="45" id="xLG-pf-s7h"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="0ao-SB-qIk">
+                                <rect key="frame" x="86.5" y="799" width="595" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WL-m0-Cqs" customClass="CTASecondaryButton" customModule="TestPod">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="Z03-bA-jnt"/>
+                                            <constraint firstAttribute="height" constant="45" id="fik-XW-2UC"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8g-Ra-blH" customClass="CTAPrimaryButton" customModule="TestPod">
+                                        <rect key="frame" x="315" y="0.0" width="280" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Jf6-fE-4Gz"/>
+                                            <constraint firstAttribute="width" constant="280" id="LJI-qL-ctE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Ww-ZA-oze" firstAttribute="bottom" secondItem="iOk-5J-EE9" secondAttribute="bottom" constant="35" id="JPH-Wy-L5p"/>
+                            <constraint firstItem="0ao-SB-qIk" firstAttribute="centerX" secondItem="3Ww-ZA-oze" secondAttribute="centerX" id="VCw-os-Udv"/>
+                            <constraint firstItem="iOk-5J-EE9" firstAttribute="centerX" secondItem="3Ww-ZA-oze" secondAttribute="centerX" id="kdp-R7-bkU"/>
+                            <constraint firstItem="yS1-9Q-dZP" firstAttribute="top" secondItem="0ao-SB-qIk" secondAttribute="bottom" constant="100" id="ul6-Sd-5wN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Ww-ZA-oze"/>
+                    </view>
+                    <connections>
+                        <outlet property="primaryButton" destination="7cb-IX-Tzy" id="aLj-rv-z6J"/>
+                        <outlet property="secondaryButton" destination="yS1-9Q-dZP" id="7s9-VA-ImX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c1U-O9-iSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="32"/>
+        </scene>
+    </scenes>
+</document>

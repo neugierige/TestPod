@@ -10,8 +10,9 @@ import Foundation
 
 // Models for first-level objects
 struct ComponentCategory {
-    var componentCategoryTitle: String
+    var categoryName: String
     var subtitle: String?
+    var storyboardID: String
     var usageDescription: String
     var bestPractices: String
     var components: [Component]
@@ -19,8 +20,7 @@ struct ComponentCategory {
 
 // Models for components themselves
 struct Component {
-    var title: String
+    var name: String
     var patternID: String
-    var storyboardID: String
-    var viewControllerTitle: String
+    var storyboardID: String?
 }
