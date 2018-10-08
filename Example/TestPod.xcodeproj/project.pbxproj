@@ -17,6 +17,7 @@
 		99B629F4216AF87600C82943 /* CTAsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B629F3216AF87600C82943 /* CTAsViewController.swift */; };
 		99B629F8216B8AD700C82943 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B629F7216B8AD700C82943 /* MasterViewController.swift */; };
 		99B629FA216B8CE600C82943 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B629F9216B8CE600C82943 /* DetailViewController.swift */; };
+		99B629FC216BA47000C82943 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B629FB216BA47000C82943 /* Component.swift */; };
 		A77C09BDF5DF7D60215FAEE2 /* Pods_TestPod_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F212CD4BD96BBACBC8C31313 /* Pods_TestPod_Tests.framework */; };
 		B69195DA2DB20927FD5DDCB5 /* Pods_TestPod_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5A69B109D37617B0211B4E /* Pods_TestPod_Example.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		99B629F3216AF87600C82943 /* CTAsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAsViewController.swift; sourceTree = "<group>"; };
 		99B629F7216B8AD700C82943 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		99B629F9216B8CE600C82943 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		99B629FB216BA47000C82943 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		BE180E9092B1676EBC3D955B /* TestPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TestPod.podspec; path = ../TestPod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED5A69B109D37617B0211B4E /* Pods_TestPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F212CD4BD96BBACBC8C31313 /* Pods_TestPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				99B629F9216B8CE600C82943 /* DetailViewController.swift */,
 				99B629F7216B8AD700C82943 /* MasterViewController.swift */,
+				99B629FB216BA47000C82943 /* Component.swift */,
 				991F719D215B046500C1A006 /* Components */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -410,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99B629F4216AF87600C82943 /* CTAsViewController.swift in Sources */,
+				99B629FC216BA47000C82943 /* Component.swift in Sources */,
 				99B629F8216B8AD700C82943 /* MasterViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				991F719C215B03F300C1A006 /* BlinkingLabelViewController.swift in Sources */,
