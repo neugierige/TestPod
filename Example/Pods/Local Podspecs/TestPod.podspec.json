@@ -23,7 +23,7 @@
   "source_files": "TestPod/Classes/**/*",
   "resource_bundles": {
     "TestPod": [
-      "TestPod/Assets/**/*.{ttf}"
+      "TestPod/Assets/**/*"
     ]
   }
 }

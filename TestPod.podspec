@@ -34,8 +34,7 @@ Pod::Spec.new do |s|
   s.source_files = 'TestPod/Classes/**/*'
   
    s.resource_bundles = {
-       'TestPod' => ['TestPod/Assets/**/*.{ttf}']
-  #   'TestPod' => ['TestPod/Assets/*.png']
+       'TestPod' => ['TestPod/Assets/**/*']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
