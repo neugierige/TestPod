@@ -11,7 +11,7 @@ import Foundation
 // Models for first-level objects
 struct ComponentCategory {
     var componentCategoryTitle: String
-    var subtitle: String
+    var subtitle: String?
     var usageDescription: String
     var bestPractices: String
     var components: [Component]

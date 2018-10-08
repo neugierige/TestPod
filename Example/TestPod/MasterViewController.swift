@@ -10,6 +10,14 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
+    let components: [Component] = [
+        Component(title: "CTAs", patternID: "17", storyboardID: "CTAPrimaryButton", viewControllerTitle: "CTAsViewController"),
+        Component(title: "Secondary CTA", patternID: "18", storyboardID: "CTASecondaryButton", viewControllerTitle: "CTAsViewController")]
+    let componentCategories: [ComponentCategory] = [
+        ComponentCategory(componentCategoryTitle: "Buttons", subtitle: nil, usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: []),
+        ComponentCategory(componentCategoryTitle: "Typography", subtitle: "Heading, paragraph, links", usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: [])
+    ]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,22 +28,17 @@ class MasterViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return componentCategories.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        // Configure the cell...
-
+        let componentCategory = componentCategories[indexPath.row]
+        cell.textLabel?.text = componentCategory.componentCategoryTitle
         return cell
     }
 
