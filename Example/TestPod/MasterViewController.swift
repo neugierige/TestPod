@@ -21,12 +21,7 @@ class MasterViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        splitViewController?.preferredDisplayMode = .allVisible
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        splitViewController?.preferredDisplayMode = .primaryOverlay
     }
 
     // MARK: - Table view data source
@@ -47,7 +42,8 @@ class MasterViewController: UITableViewController {
         let storyboardName = componentCategories[indexPath.row].storyboardID
         let componentStoryboard = UIStoryboard(name: storyboardName, bundle: nil)
         if let componentViewController = componentStoryboard.instantiateInitialViewController() {
-            splitViewController?.showDetailViewController(componentViewController, sender: nil)
+            let navVC = UINavigationController(rootViewController: componentViewController)
+            splitViewController?.showDetailViewController(navVC, sender: nil)
         } else {
             print("no VC for \(storyboardName)")
         }

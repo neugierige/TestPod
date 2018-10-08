@@ -9,7 +9,7 @@
 import UIKit
 import TestPod
 
-class TypographyViewController: UIViewController {
+class TypographyViewController: DetailViewController {
 
     @IBOutlet weak var h1: UILabel!
     @IBOutlet weak var h2: UILabel!

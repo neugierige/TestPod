@@ -9,7 +9,7 @@
 import UIKit
 import TestPod
 
-class CTAsViewController: UIViewController {
+class CTAsViewController: DetailViewController {
 
     @IBOutlet weak var primaryButton: CTAPrimaryButton!
     @IBOutlet weak var secondaryButton: CTASecondaryButton!
