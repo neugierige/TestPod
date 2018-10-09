@@ -11,8 +11,46 @@ import TestPod
 
 class IconsViewController: UIViewController {
 
+    @IBOutlet weak var button44: UIButton!
+    @IBOutlet weak var button45: UIButton!
+    @IBOutlet weak var button46: UIButton!
+    @IBOutlet weak var button47: UIButton!
+
+    @IBOutlet weak var button48: UIButton!
+    @IBOutlet weak var button49: UIButton!
+    @IBOutlet weak var button50: UIButton!
+    @IBOutlet weak var button51: UIButton!
+
+    @IBOutlet weak var button52: UIButton!
+    @IBOutlet weak var button53: UIButton!
+    @IBOutlet weak var button54: UIButton!
+    @IBOutlet weak var button55: UIButton!
+
+    @IBOutlet weak var button56: UIButton!
+    @IBOutlet weak var button57: UIButton!
+    @IBOutlet weak var button58: UIButton!
+    @IBOutlet weak var button59: UIButton!
+
+    @IBOutlet weak var button60: UIButton!
+    @IBOutlet weak var button62: UIButton!
+    @IBOutlet weak var button65: UIButton!
+    @IBOutlet weak var button66: UIButton!
+
+    @IBOutlet weak var button35S: UIButton!
+    @IBOutlet weak var button35L: UIButton!
+    @IBOutlet weak var button36: UIButton!
+    @IBOutlet weak var button37: UIButton!
+
+    @IBOutlet weak var button236: UIButton!
+    @IBOutlet weak var button237: UIButton!
+    @IBOutlet weak var button283: UIButton!
+    @IBOutlet weak var button284: UIButton!
+    @IBOutlet weak var button240: UIButton!
+    @IBOutlet weak var button242: UIButton!
+
+
     struct IconImages {
-        let id44 = [#imageLiteral(resourceName: "44_Checkmark_Green"), #imageLiteral(resourceName: "44_Checkmark_Magenta")]
+        let id44 = [#imageLiteral(resourceName: "44_Checkmark_Magenta"), #imageLiteral(resourceName: "44_Checkmark_Green")]
         let id45 = [#imageLiteral(resourceName: "45_Info")]
         let id46 = [#imageLiteral(resourceName: "46_Camera_Gray"), #imageLiteral(resourceName: "46_Camera_Magenta")]
         let id47 = [#imageLiteral(resourceName: "47_Reload_Gray"), #imageLiteral(resourceName: "47_Reload_Magenta")]
@@ -40,10 +78,11 @@ class IconsViewController: UIViewController {
 
         let id236 = #imageLiteral(resourceName: "236_BillIncrease")
         let id237 = #imageLiteral(resourceName: "237_BillDecrease")
-        let id240 = #imageLiteral(resourceName: "240_Jump")
-        let id242 = #imageLiteral(resourceName: "242_Entrust")
         let id283 = #imageLiteral(resourceName: "283_ArrowLeft")
         let id284 = #imageLiteral(resourceName: "284_ArrowRight")
+
+        let id240 = #imageLiteral(resourceName: "240_Jump")
+        let id242 = #imageLiteral(resourceName: "242_Entrust")
     }
 
     struct CreditCardImages {
@@ -74,7 +113,12 @@ class IconsViewController: UIViewController {
     }
 
     func setupButtonImages() {
-
+        button44.imageView?.image = IconImages().id44.last
+        button45.imageView?.image = IconImages().id45.last
+        button46.imageView?.image = IconImages().id46.last
+        button47.imageView?.image = IconImages().id47.last
+        button48.imageView?.image = IconImages().id48.last
+        button49.imageView?.image = IconImages().id49.last
     }
 
 }
