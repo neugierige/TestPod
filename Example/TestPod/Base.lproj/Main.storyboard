@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="596.09375" y="488.67187499999994"/>
         </scene>
-        <!--Root View Controller-->
+        <!--UIComponent Library-->
         <scene sceneID="GwV-qa-Aek">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="wbW-j0-2hT" customClass="MasterViewController" customModule="TestPod_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                             <outlet property="delegate" destination="wbW-j0-2hT" id="Nlo-Gg-YUM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="YSL-Cj-XYX"/>
+                    <navigationItem key="navigationItem" title="UIComponent Library" id="YSL-Cj-XYX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xH3-wy-Kqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
