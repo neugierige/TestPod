@@ -17,7 +17,11 @@ class TypographyViewController: DetailViewController {
     @IBOutlet weak var h5: UILabel!
     @IBOutlet weak var h6: UILabel!
     @IBOutlet weak var h7: UILabel!
+    @IBOutlet weak var pLead: UILabel!
     @IBOutlet weak var pRegular: UILabel!
+    @IBOutlet weak var pSmall: UILabel!
+    @IBOutlet weak var pXSmall: UILabel!
+    @IBOutlet weak var pLegal: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +32,12 @@ class TypographyViewController: DetailViewController {
         h6.font = TMoFonts.hFont(for: TMoFonts.HFontSizes.h6Heading)
         h7.font = TMoFonts.hFont(for: TMoFonts.HFontSizes.h7Subheading)
         h7.text = h7.text?.uppercased()
+        pLead.font = TMoFonts.arialFont(size: TMoFonts.ArialFontSizes.lead)
         pRegular.font = TMoFonts.arialFont(size: TMoFonts.ArialFontSizes.regular)
+        pSmall.font = TMoFonts.arialFont(size: TMoFonts.ArialFontSizes.small)
+        pXSmall.font = TMoFonts.arialFont(size: TMoFonts.ArialFontSizes.xsmall)
+        pLegal.font = TMoFonts.arialFont(size: TMoFonts.ArialFontSizes.legal)
+
     }
 
 }

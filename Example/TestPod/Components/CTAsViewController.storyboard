@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o0Z-KB-BCH">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="o0Z-KB-BCH" customClass="CTAsViewController" customModule="TestPod_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2mx-ZL-tCf">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="iOk-5J-EE9">
-                                <rect key="frame" x="86.5" y="944" width="595" height="45"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="iOk-5J-EE9">
+                                <rect key="frame" x="47.5" y="507" width="280" height="125"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yS1-9Q-dZP" customClass="CTASecondaryButton" customModule="TestPod">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="45"/>
@@ -30,7 +30,7 @@
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cb-IX-Tzy" customClass="CTAPrimaryButton" customModule="TestPod">
-                                        <rect key="frame" x="315" y="0.0" width="280" height="45"/>
+                                        <rect key="frame" x="0.0" y="80" width="280" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="280" id="Krw-Gv-Ef8"/>
                                             <constraint firstAttribute="height" constant="45" id="xLG-pf-s7h"/>
@@ -38,9 +38,11 @@
                                         <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
+                                <variation key="widthClass=compact" axis="vertical"/>
+                                <variation key="widthClass=regular" axis="horizontal"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="0ao-SB-qIk">
-                                <rect key="frame" x="86.5" y="799" width="595" height="45"/>
+                                <rect key="frame" x="47.5" y="282" width="280" height="125"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WL-m0-Cqs" customClass="CTASecondaryButton" customModule="TestPod">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="45"/>
@@ -51,7 +53,7 @@
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8g-Ra-blH" customClass="CTAPrimaryButton" customModule="TestPod">
-                                        <rect key="frame" x="315" y="0.0" width="280" height="45"/>
+                                        <rect key="frame" x="0.0" y="80" width="280" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="Jf6-fE-4Gz"/>
                                             <constraint firstAttribute="width" constant="280" id="LJI-qL-ctE"/>
@@ -59,6 +61,8 @@
                                         <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
+                                <variation key="widthClass=compact" axis="vertical"/>
+                                <variation key="widthClass=regular" axis="horizontal"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
