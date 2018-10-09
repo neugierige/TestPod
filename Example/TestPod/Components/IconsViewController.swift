@@ -45,7 +45,29 @@ class IconsViewController: UIViewController {
         let id283 = #imageLiteral(resourceName: "283_ArrowLeft")
         let id284 = #imageLiteral(resourceName: "284_ArrowRight")
     }
-    
+
+    struct CreditCardImages {
+        let amex = #imageLiteral(resourceName: "amexCard")
+        let amexDisabled = #imageLiteral(resourceName: "amexCard_disabled")
+        let discover = #imageLiteral(resourceName: "discoverCard")
+        let discoverDisabled = #imageLiteral(resourceName: "discoverCard_disabled")
+        let mastercard = #imageLiteral(resourceName: "mastercardCard")
+        let mastercardDisabled = #imageLiteral(resourceName: "mastercardCard_disabled")
+        let visa = #imageLiteral(resourceName: "visaCard")
+        let visaDisabled = #imageLiteral(resourceName: "visaCard_disabled")
+        let atm = #imageLiteral(resourceName: "atmCard")
+        let atmDisabled = #imageLiteral(resourceName: "atmCard_disabled")
+        let bank = #imageLiteral(resourceName: "bankCard")
+        let bankDisabled = #imageLiteral(resourceName: "bankCard_disabled")
+    }
+
+    struct SocialMediaIcons {
+        let facebook = [#imageLiteral(resourceName: "facebookSquare_Black"), #imageLiteral(resourceName: "facebookSquare_White")]
+        let twitter = [#imageLiteral(resourceName: "twitterSquare_Black"), #imageLiteral(resourceName: "twitterSquare_White")]
+        let instagram = [#imageLiteral(resourceName: "instagramSquare_Black"), #imageLiteral(resourceName: "instagramSquare_White")]
+        let googlePlus = [#imageLiteral(resourceName: "googlePlusSquare_Black"), #imageLiteral(resourceName: "googlePlusSquare_White")]
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButtonImages()
