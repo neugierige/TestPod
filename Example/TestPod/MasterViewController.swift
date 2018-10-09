@@ -16,7 +16,7 @@ class MasterViewController: UITableViewController {
 
     let componentCategories: [ComponentCategory] = [
         ComponentCategory(categoryName: "Buttons", subtitle: "View that have touch recognizer", storyboardID: "CTAsViewController", usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: []),
-        ComponentCategory(categoryName: "Icons", subtitle: "Icons and button images, credit card and social media logos", storyboardID: "IconsViewController", usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: []),
+//        ComponentCategory(categoryName: "Icons", subtitle: "Icons and button images, credit card and social media logos", storyboardID: "IconsViewController", usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: []),
         ComponentCategory(categoryName: "Typography", subtitle: "Heading, paragraph, links", storyboardID: "TypographyViewController", usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: [])
     ]
 

@@ -19,178 +19,182 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="97j-xj-dI9" userLabel="Stack View 1">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="97j-xj-dI9" userLabel="Stack View 1">
                                 <rect key="frame" x="67" y="78" width="634" height="22"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6c-oh-FaC">
-                                        <rect key="frame" x="0.0" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="44_Checkmark_Green"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6c-oh-FaC">
+                                        <rect key="frame" x="-67" y="-78" width="0.0" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epK-YO-GoM">
-                                        <rect key="frame" x="166" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="45_Info"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epK-YO-GoM">
+                                        <rect key="frame" x="-67" y="-78" width="0.0" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jp-hR-bwd">
-                                        <rect key="frame" x="332" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="46_Camera_Magenta"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jp-hR-bwd">
+                                        <rect key="frame" x="-67" y="-78" width="0.0" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcF-wd-Nf2">
-                                        <rect key="frame" x="498" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="47_Reload_Magenta"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcF-wd-Nf2">
+                                        <rect key="frame" x="-67" y="-78" width="0.0" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="cp7-FJ-2Vq"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="7bV-cm-u4T" userLabel="Stack View 2">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="7bV-cm-u4T" userLabel="Stack View 2">
                                 <rect key="frame" x="67" y="130" width="634" height="22"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJM-4y-8zw">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="48_StarFull_Magenta"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-fY-OUZ">
                                         <rect key="frame" x="166" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="49_StarHalfFull_Magenta"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJG-RK-a3f">
                                         <rect key="frame" x="332" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="50_StarEmpty_Magenta"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WII-6z-nwt">
                                         <rect key="frame" x="498" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="51_Add_Magenta"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="a3Y-Ni-5pU" userLabel="Stack View 3">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="a3Y-Ni-5pU" userLabel="Stack View 3">
                                 <rect key="frame" x="67" y="182" width="634" height="22"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjr-OB-DcB">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="52_Subtract_Magenta"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09O-UA-pLP">
                                         <rect key="frame" x="166" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="53_Close_Magenta"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyC-3r-7cM">
                                         <rect key="frame" x="332" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="54_Lock"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWg-Bc-dIU">
                                         <rect key="frame" x="498" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="55_Unlock"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zdm-At-mmZ" userLabel="Stack View 4">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zdm-At-mmZ" userLabel="Stack View 4">
                                 <rect key="frame" x="67" y="234" width="634" height="22"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqN-1a-ywY">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="56_ManagerLogin_Magenta"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFK-TP-sRd">
                                         <rect key="frame" x="166" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="57_Menu_Magenta"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4y-ld-K9h">
                                         <rect key="frame" x="332" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="58_Error"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzX-Lm-guS">
                                         <rect key="frame" x="498" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="59_Alert"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wDb-gA-Uh6" userLabel="Stack View 5">
-                                <rect key="frame" x="67" y="286" width="634" height="22"/>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wDb-gA-Uh6" userLabel="Stack View 5">
+                                <rect key="frame" x="67" y="286" width="634" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GX-aT-3IM">
-                                        <rect key="frame" x="0.0" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="60_Scan_Magenta"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJh-EB-BsL">
-                                        <rect key="frame" x="166" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="62_CaretRightIcon_Magenta"/>
+                                        <rect key="frame" x="166" y="0.0" width="136" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIS-yn-tFI">
-                                        <rect key="frame" x="332" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="65_CaretTableDown_Magenta"/>
+                                        <rect key="frame" x="332" y="0.0" width="136" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYE-df-9L4">
-                                        <rect key="frame" x="498" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="66_Search_Magenta"/>
+                                        <rect key="frame" x="498" y="0.0" width="136" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mZ3-5y-tBi" userLabel="Stack View 6">
-                                <rect key="frame" x="67" y="352" width="634" height="40"/>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mZ3-5y-tBi" userLabel="Stack View 6">
+                                <rect key="frame" x="67" y="364" width="634" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qq1-Mc-JbY">
-                                        <rect key="frame" x="0.0" y="0.0" width="136" height="40"/>
-                                        <state key="normal" title="Button" image="35_PlayButtonIcon_82"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQD-Ik-Fge">
-                                        <rect key="frame" x="166" y="0.0" width="136" height="40"/>
-                                        <state key="normal" title="Button" image="35_PlayButtonIcon_105"/>
+                                        <rect key="frame" x="166" y="0.0" width="136" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkI-7R-1P7">
-                                        <rect key="frame" x="332" y="0.0" width="136" height="32"/>
-                                        <state key="normal" title="Button" image="36_TMOLogo"/>
+                                        <rect key="frame" x="332" y="0.0" width="136" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5I-cW-IM5">
-                                        <rect key="frame" x="498" y="0.0" width="136" height="40"/>
-                                        <state key="normal" title="Button" image="37_Score"/>
+                                        <rect key="frame" x="498" y="0.0" width="136" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="yn0-pw-iXW"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vFD-py-DKi" userLabel="Stack View 7">
-                                <rect key="frame" x="67" y="422" width="634" height="40"/>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vFD-py-DKi" userLabel="Stack View 7">
+                                <rect key="frame" x="67" y="434" width="634" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knp-mP-9fU">
-                                        <rect key="frame" x="0.0" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="236_BillIncrease"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLK-LG-lPg">
-                                        <rect key="frame" x="166" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="237_BillDecrease"/>
+                                        <rect key="frame" x="166" y="0.0" width="136" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXF-qI-RUB">
-                                        <rect key="frame" x="332" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="283_ArrowLeft"/>
+                                        <rect key="frame" x="332" y="0.0" width="136" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fto-FD-Wii">
-                                        <rect key="frame" x="498" y="0.0" width="136" height="22"/>
-                                        <state key="normal" title="Button" image="284_ArrowRight"/>
+                                        <rect key="frame" x="498" y="0.0" width="136" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="wzU-Wn-d4z"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ych-n8-3Pb" userLabel="Stack View 8">
-                                <rect key="frame" x="67" y="484" width="317" height="40"/>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ych-n8-3Pb" userLabel="Stack View 8">
+                                <rect key="frame" x="67" y="496" width="317" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2g-i9-Yqk">
-                                        <rect key="frame" x="0.0" y="0.0" width="143.5" height="40"/>
-                                        <state key="normal" title="Button" image="240_Jump"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="143.5" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BM4-h8-T81">
-                                        <rect key="frame" x="173.5" y="0.0" width="143.5" height="40"/>
-                                        <state key="normal" title="Button" image="242_Entrust"/>
+                                        <rect key="frame" x="173.5" y="0.0" width="143.5" height="34"/>
+                                        <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="sEU-2r-M8o"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aso-Ba-5vR">
+                                <rect key="frame" x="361" y="507" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -214,6 +218,8 @@
                             <constraint firstItem="7bV-cm-u4T" firstAttribute="top" secondItem="97j-xj-dI9" secondAttribute="bottom" constant="30" id="glR-fF-jPW"/>
                             <constraint firstItem="zdm-At-mmZ" firstAttribute="top" secondItem="a3Y-Ni-5pU" secondAttribute="bottom" constant="30" id="guv-Rs-eMT"/>
                             <constraint firstItem="97j-xj-dI9" firstAttribute="top" secondItem="Qf7-Uc-axg" secondAttribute="top" constant="58" id="huf-Ly-7St"/>
+                            <constraint firstItem="aso-Ba-5vR" firstAttribute="centerY" secondItem="Qf7-Uc-axg" secondAttribute="centerY" id="iBT-62-IzE"/>
+                            <constraint firstItem="aso-Ba-5vR" firstAttribute="centerX" secondItem="Qf7-Uc-axg" secondAttribute="centerX" id="iOP-7A-GlB"/>
                             <constraint firstItem="Ych-n8-3Pb" firstAttribute="width" secondItem="97j-xj-dI9" secondAttribute="width" multiplier="1/2" id="iWs-6G-8QI"/>
                             <constraint firstItem="vFD-py-DKi" firstAttribute="width" secondItem="97j-xj-dI9" secondAttribute="width" id="l6q-OC-Czh"/>
                             <constraint firstItem="97j-xj-dI9" firstAttribute="centerX" secondItem="Qf7-Uc-axg" secondAttribute="centerX" id="q33-YX-NBj"/>
@@ -255,6 +261,7 @@
                         <outlet property="button62" destination="gJh-EB-BsL" id="MC4-qK-WwT"/>
                         <outlet property="button65" destination="LIS-yn-tFI" id="5d8-q1-AXe"/>
                         <outlet property="button66" destination="SYE-df-9L4" id="T4q-MQ-8od"/>
+                        <outlet property="testButton" destination="aso-Ba-5vR" id="Ig9-3F-DXG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="loG-Bk-Ub0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -262,36 +269,4 @@
             <point key="canvasLocation" x="-1" y="84"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="236_BillIncrease" width="6" height="14"/>
-        <image name="237_BillDecrease" width="6" height="14"/>
-        <image name="240_Jump" width="238" height="69"/>
-        <image name="242_Entrust" width="64" height="64"/>
-        <image name="283_ArrowLeft" width="14" height="6"/>
-        <image name="284_ArrowRight" width="14" height="6"/>
-        <image name="35_PlayButtonIcon_105" width="105" height="105"/>
-        <image name="35_PlayButtonIcon_82" width="82" height="82"/>
-        <image name="36_TMOLogo" width="64" height="32"/>
-        <image name="37_Score" width="240" height="78"/>
-        <image name="44_Checkmark_Green" width="14" height="11"/>
-        <image name="45_Info" width="16" height="17"/>
-        <image name="46_Camera_Magenta" width="26" height="23"/>
-        <image name="47_Reload_Magenta" width="16" height="17"/>
-        <image name="48_StarFull_Magenta" width="18" height="17"/>
-        <image name="49_StarHalfFull_Magenta" width="18" height="17"/>
-        <image name="50_StarEmpty_Magenta" width="18" height="17"/>
-        <image name="51_Add_Magenta" width="18" height="18"/>
-        <image name="52_Subtract_Magenta" width="18" height="5"/>
-        <image name="53_Close_Magenta" width="14" height="15"/>
-        <image name="54_Lock" width="20" height="24"/>
-        <image name="55_Unlock" width="20" height="26"/>
-        <image name="56_ManagerLogin_Magenta" width="19" height="16"/>
-        <image name="57_Menu_Magenta" width="16" height="13"/>
-        <image name="58_Error" width="19" height="20"/>
-        <image name="59_Alert" width="20" height="18"/>
-        <image name="60_Scan_Magenta" width="20" height="16"/>
-        <image name="62_CaretRightIcon_Magenta" width="8" height="14"/>
-        <image name="65_CaretTableDown_Magenta" width="8" height="5"/>
-        <image name="66_Search_Magenta" width="21" height="22"/>
-    </resources>
 </document>
