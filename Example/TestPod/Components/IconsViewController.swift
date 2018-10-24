@@ -11,57 +11,55 @@ import TestPod
 
 class IconsViewController: DetailViewController {
 
-    @IBOutlet weak var testButton: UIButton!
-    @IBOutlet weak var button44: UIButton!
-    @IBOutlet weak var button45: UIButton!
-    @IBOutlet weak var button46: UIButton!
-    @IBOutlet weak var button47: UIButton!
+    @IBOutlet weak var button1: IconButton!
+    @IBOutlet weak var button2: IconButton!
+    @IBOutlet weak var button3: IconButton!
+    @IBOutlet weak var button4: IconButton!
 
-    @IBOutlet weak var button48: UIButton!
-    @IBOutlet weak var button49: UIButton!
-    @IBOutlet weak var button50: UIButton!
-    @IBOutlet weak var button51: UIButton!
+    @IBOutlet weak var button5: IconButton!
+    @IBOutlet weak var button6: IconButton!
+    @IBOutlet weak var button7: IconButton!
+    @IBOutlet weak var button8: IconButton!
 
-    @IBOutlet weak var button52: UIButton!
-    @IBOutlet weak var button53: UIButton!
-    @IBOutlet weak var button54: UIButton!
-    @IBOutlet weak var button55: UIButton!
+    @IBOutlet weak var button9: IconButton!
+    @IBOutlet weak var button10: IconButton!
+    @IBOutlet weak var button11: IconButton!
+    @IBOutlet weak var button12: IconButton!
 
-    @IBOutlet weak var button56: UIButton!
-    @IBOutlet weak var button57: UIButton!
-    @IBOutlet weak var button58: UIButton!
-    @IBOutlet weak var button59: UIButton!
-
-    @IBOutlet weak var button60: UIButton!
-    @IBOutlet weak var button62: UIButton!
-    @IBOutlet weak var button65: UIButton!
-    @IBOutlet weak var button66: UIButton!
-
-    @IBOutlet weak var button35S: UIButton!
-    @IBOutlet weak var button35L: UIButton!
-    @IBOutlet weak var button36: UIButton!
-    @IBOutlet weak var button37: UIButton!
-
-    @IBOutlet weak var button236: UIButton!
-    @IBOutlet weak var button237: UIButton!
-    @IBOutlet weak var button283: UIButton!
-    @IBOutlet weak var button284: UIButton!
-    @IBOutlet weak var button240: UIButton!
-    @IBOutlet weak var button242: UIButton!
+    var iconButtons: [IconButton] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupButtonImages()
+
+        iconButtons = [
+            button1, button2, button3, button4,
+            button5, button6, button7, button8,
+            button9, button10, button11, button12 ]
+        setupIconButtons()
     }
 
-    func setupButtonImages() {
-        testButton.imageView?.image = IconNames.checkmarkMagenta
-//        button44.imageView?.image = IconNames.checkmarkMagenta
-//        button45.imageView?.image = IconImages.id45.last
-//        button46.imageView?.image = IconImages.id46.last
-//        button47.imageView?.image = IconImages.id47.last
-//        button48.imageView?.image = IconImages.id48.last
-//        button49.imageView?.image = IconImages.id49.last
+    func setupIconButtons() {
+        button1.setImage(IconNames.camera.magenta, for: .normal)
+        button2.setImage(IconNames.reload.magenta, for: .normal)
+        button3.setImage(IconNames.fullStar.magenta, for: .normal)
+        button4.setImage(IconNames.halfStar.magenta, for: .normal)
+
+        button5.setImage(IconNames.emptyStar.magenta, for: .normal)
+        button6.setImage(IconNames.plusSign.magenta, for: .normal)
+        button7.setImage(IconNames.minusSign.magenta, for: .normal)
+        button8.setImage(IconNames.closeSign.magenta, for: .normal)
+
+        button9.setImage(IconNames.managerLogin.magenta, for: .normal)
+        button10.setImage(IconNames.menu.magenta, for: .normal)
+        button11.setImage(IconNames.caretLine.magenta, for: .normal)
+        button12.setImage(IconNames.caretSolid.magenta, for: .normal)
+        iconButtons.forEach { $0.isEnabled = true }
+    }
+
+    @IBAction func switchToggled(_ sender: UISwitch) {
+        iconButtons.forEach {
+            $0.isEnabled = sender.isOn ? true : false
+        }
     }
 
 }

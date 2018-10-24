@@ -16,7 +16,7 @@ class MasterViewController: UITableViewController {
 
     let componentCategories: [ComponentCategory] = [
         ComponentCategory(categoryName: "Buttons", subtitle: "View that have touch recognizer", storyboardID: "CTAsViewController", usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: []),
-//        ComponentCategory(categoryName: "Icons", subtitle: "Icons and button images, credit card and social media logos", storyboardID: "IconsViewController", usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: []),
+        ComponentCategory(categoryName: "Icons", subtitle: "Icons and button images, credit card and social media logos", storyboardID: "IconsViewController", usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: []),
         ComponentCategory(categoryName: "Typography", subtitle: "Heading, paragraph, links", storyboardID: "TypographyViewController", usageDescription: "lorem ipsem foo foo", bestPractices: "do this, not that", components: [])
     ]
 
@@ -49,15 +49,5 @@ class MasterViewController: UITableViewController {
             print("no VC for \(storyboardName)")
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
