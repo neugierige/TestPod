@@ -116,8 +116,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJT-Od-rnn">
+                                <rect key="frame" x="130.5" y="404" width="507" height="2"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="N0Z-Mu-IMc"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wDb-gA-Uh6" userLabel="Non-Switchable 1">
-                                <rect key="frame" x="67" y="429" width="634" height="22"/>
+                                <rect key="frame" x="67" y="451" width="634" height="22"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4y-ld-K9h">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="22"/>
@@ -134,7 +141,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mZ3-5y-tBi" userLabel="Non-Switchable 2">
-                                <rect key="frame" x="67" y="496" width="634" height="22"/>
+                                <rect key="frame" x="67" y="518" width="634" height="22"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qq1-Mc-JbY">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="22"/>
@@ -151,7 +158,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vFD-py-DKi" userLabel="Non-Switchable 3">
-                                <rect key="frame" x="67" y="563" width="634" height="22"/>
+                                <rect key="frame" x="67" y="585" width="634" height="22"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Tl-Cs-RAb">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="22"/>
@@ -168,7 +175,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ych-n8-3Pb" userLabel="Non-Switchable 4">
-                                <rect key="frame" x="67" y="630" width="634" height="40"/>
+                                <rect key="frame" x="67" y="652" width="634" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jj6-fC-dHy">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="40"/>
@@ -191,6 +198,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="a3Y-Ni-5pU" firstAttribute="height" secondItem="97j-xj-dI9" secondAttribute="height" id="2NN-Vy-Z8e"/>
+                            <constraint firstItem="uJT-Od-rnn" firstAttribute="width" secondItem="97j-xj-dI9" secondAttribute="width" multiplier="0.8" id="4N2-WR-t2v"/>
                             <constraint firstItem="wDb-gA-Uh6" firstAttribute="leading" secondItem="zdm-At-mmZ" secondAttribute="leading" id="56c-4n-UoA"/>
                             <constraint firstItem="a3Y-Ni-5pU" firstAttribute="width" secondItem="97j-xj-dI9" secondAttribute="width" id="6cz-ny-7gx"/>
                             <constraint firstItem="vFD-py-DKi" firstAttribute="top" secondItem="mZ3-5y-tBi" secondAttribute="bottom" constant="45" id="6e0-F1-6ZX"/>
@@ -200,12 +208,14 @@
                             <constraint firstItem="XtQ-0K-9BV" firstAttribute="top" secondItem="Qf7-Uc-axg" secondAttribute="top" constant="60" id="KPc-Xw-I4h"/>
                             <constraint firstItem="mZ3-5y-tBi" firstAttribute="leading" secondItem="wDb-gA-Uh6" secondAttribute="leading" id="LyU-4o-zWs"/>
                             <constraint firstItem="XtQ-0K-9BV" firstAttribute="centerX" secondItem="Qf7-Uc-axg" secondAttribute="centerX" id="Nfm-vs-Ggx"/>
+                            <constraint firstItem="wDb-gA-Uh6" firstAttribute="top" secondItem="uJT-Od-rnn" secondAttribute="bottom" constant="45" id="OWm-AR-6AV"/>
                             <constraint firstItem="vFD-py-DKi" firstAttribute="height" secondItem="97j-xj-dI9" secondAttribute="height" id="QYG-I3-XSk"/>
-                            <constraint firstItem="wDb-gA-Uh6" firstAttribute="top" secondItem="zdm-At-mmZ" secondAttribute="bottom" constant="65" id="Riv-y2-RJU"/>
+                            <constraint firstItem="uJT-Od-rnn" firstAttribute="centerX" secondItem="97j-xj-dI9" secondAttribute="centerX" id="UMn-nA-pnb"/>
                             <constraint firstItem="mZ3-5y-tBi" firstAttribute="width" secondItem="97j-xj-dI9" secondAttribute="width" id="UVr-g5-qQn"/>
                             <constraint firstItem="vFD-py-DKi" firstAttribute="leading" secondItem="97j-xj-dI9" secondAttribute="leading" id="Vq7-AW-a2M"/>
                             <constraint firstItem="zdm-At-mmZ" firstAttribute="height" secondItem="97j-xj-dI9" secondAttribute="height" id="XQH-PU-duU"/>
                             <constraint firstItem="XtQ-0K-9BV" firstAttribute="bottom" secondItem="97j-xj-dI9" secondAttribute="top" constant="-30" id="XhP-qh-J5O"/>
+                            <constraint firstItem="uJT-Od-rnn" firstAttribute="top" secondItem="zdm-At-mmZ" secondAttribute="bottom" constant="40" id="YV6-6L-zkt"/>
                             <constraint firstItem="7bV-cm-u4T" firstAttribute="width" secondItem="97j-xj-dI9" secondAttribute="width" id="bbS-n0-Kqg"/>
                             <constraint firstItem="97j-xj-dI9" firstAttribute="leading" secondItem="Qf7-Uc-axg" secondAttribute="leading" constant="67" id="bcQ-Ot-Kf5"/>
                             <constraint firstItem="mZ3-5y-tBi" firstAttribute="top" secondItem="wDb-gA-Uh6" secondAttribute="bottom" constant="45" id="cyI-js-qyJ"/>
