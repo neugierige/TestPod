@@ -89,7 +89,6 @@ class IconsViewController: DetailViewController {
 
         button13.setImage(IconNames.scan.magenta, for: .normal)
         button14.setImage(IconNames.search.magenta, for: .normal)
-        iconButtons.forEach { $0.isEnabled = true }
     }
 
     func setupButtonsAndImages() {
@@ -120,8 +119,6 @@ class IconsViewController: DetailViewController {
     @IBAction func switchToggled(_ sender: UISwitch) {
         iconButtons.forEach {
             $0.isEnabled = sender.isOn ? true : false
-            $0.alpha = 1.0
         }
     }
-
 }

@@ -34,6 +34,7 @@ public class IconButton: UIButton {
     private func commonInit() {
         tintColor = GlobalConstants.ButtonColors.normal
         contentMode = .scaleAspectFit
+        adjustsImageWhenDisabled = false
     }
 
 }
