@@ -25,16 +25,6 @@ public class Icon {
 }
 
 public struct IconNames {
-    public struct playButton {
-        public static let large = Icon.icon("35_PlayButtonIcon_105")
-        public static let small = Icon.icon("35_PlayButtonIcon_82")
-    }
-    public static let tmoLogo = Icon.icon("36_TMOLogo")
-    public static let score = Icon.icon("37_Score")
-    public struct checkmark {
-        public static let magenta = Icon.icon("44_Checkmark_Magenta")
-        public static let green = Icon.icon("44_Checkmark_Green")
-    }
 
     public struct camera {
         public static let magenta = Icon.icon("46_Camera_Magenta")
@@ -93,6 +83,10 @@ public struct IconNames {
         public static let gray = Icon.icon("66_Search_Gray")
     }
 
+    public struct checkmark {
+        public static let magenta = Icon.icon("44_Checkmark_Magenta")
+        public static let green = Icon.icon("44_Checkmark_Green")
+    }
     public static let info = Icon.icon("45_Info")
     public static let lockClosed = Icon.icon("54_Lock")
     public static let lockOpen = Icon.icon("55_Unlock")
@@ -106,6 +100,13 @@ public struct IconNames {
         public static let left = Icon.icon("283_ArrowLeft")
         public static let right = Icon.icon("284_ArrowRight")
     }
+
+    public struct playButton {
+        public static let large = Icon.icon("35_PlayButtonIcon_105")
+        public static let small = Icon.icon("35_PlayButtonIcon_82")
+    }
+    public static let tmoLogo = Icon.icon("36_TMOLogo")
+    public static let score = Icon.icon("37_Score")
     public static let jump = Icon.icon("240_Jump")
     public static let entrust = Icon.icon("242_Entrust")
     public static let mapMarker = Icon.icon("257_MapMarker")

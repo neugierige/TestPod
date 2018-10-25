@@ -27,11 +27,13 @@ public class IconButton: UIButton {
             guard applyDisabledGray == true else {
                 return
             }
-            tintColor = isEnabled ? GlobalConstants.ButtonColors.normal : GlobalConstants.ButtonColors.disabled
+            tintColor = isEnabled ? GlobalConstants.ButtonColors.normal : GlobalConstants.ButtonColors.iconDisabled
         }
     }
 
     private func commonInit() {
         tintColor = GlobalConstants.ButtonColors.normal
+        contentMode = .scaleAspectFit
     }
+
 }
