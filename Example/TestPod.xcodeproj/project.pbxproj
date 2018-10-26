@@ -21,6 +21,7 @@
 		99B629FE216BCCD200C82943 /* CTAsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B629FD216BCCD200C82943 /* CTAsViewController.storyboard */; };
 		99B62A00216BD41300C82943 /* TypographyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B629FF216BD41300C82943 /* TypographyViewController.storyboard */; };
 		99B62A02216BD42900C82943 /* TypographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B62A01216BD42900C82943 /* TypographyViewController.swift */; };
+		99D88C0821823421006A980C /* PageTitlesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D88C0721823421006A980C /* PageTitlesTableViewController.swift */; };
 		A77C09BDF5DF7D60215FAEE2 /* Pods_TestPod_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F212CD4BD96BBACBC8C31313 /* Pods_TestPod_Tests.framework */; };
 		B69195DA2DB20927FD5DDCB5 /* Pods_TestPod_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5A69B109D37617B0211B4E /* Pods_TestPod_Example.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		99B629FD216BCCD200C82943 /* CTAsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CTAsViewController.storyboard; sourceTree = "<group>"; };
 		99B629FF216BD41300C82943 /* TypographyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TypographyViewController.storyboard; sourceTree = "<group>"; };
 		99B62A01216BD42900C82943 /* TypographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypographyViewController.swift; sourceTree = "<group>"; };
+		99D88C0721823421006A980C /* PageTitlesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitlesTableViewController.swift; sourceTree = "<group>"; };
 		BE180E9092B1676EBC3D955B /* TestPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TestPod.podspec; path = ../TestPod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED5A69B109D37617B0211B4E /* Pods_TestPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F212CD4BD96BBACBC8C31313 /* Pods_TestPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +202,7 @@
 				9997EE8A216CF58D002D04D0 /* IconsViewController.storyboard */,
 				99B62A01216BD42900C82943 /* TypographyViewController.swift */,
 				99B629FF216BD41300C82943 /* TypographyViewController.storyboard */,
+				99D88C0721823421006A980C /* PageTitlesTableViewController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				99B629F4216AF87600C82943 /* CTAsViewController.swift in Sources */,
 				99B629FC216BA47000C82943 /* Component.swift in Sources */,
 				99B629F8216B8AD700C82943 /* MasterViewController.swift in Sources */,
+				99D88C0821823421006A980C /* PageTitlesTableViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				9997EE89216CF573002D04D0 /* IconsViewController.swift in Sources */,
 				99B62A02216BD42900C82943 /* TypographyViewController.swift in Sources */,
