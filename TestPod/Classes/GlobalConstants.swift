@@ -22,10 +22,10 @@ public class GlobalConstants {
 
     // MARK: Colors
     private struct Colors {
-        public static let magentaBrand = UIColor(red: 226/255, green: 0, blue: 116/255, alpha: 1.0) // #E20074
-        public static let magentaDarker = UIColor(red: 186/255, green: 0, blue: 96/255, alpha: 1.0) // #BA0060
-        public static let grayLight = UIColor(red: 190/255, green: 190/255, blue: 190/255, alpha: 1.0) // #BEBEBE
-        public static let grayDark = UIColor(red: 90/255, green: 90/255, blue: 90/255, alpha: 1.0)
+        static let magentaBrand = UIColor(red: 226/255, green: 0, blue: 116/255, alpha: 1.0) // #E20074
+        static let magentaDarker = UIColor(red: 186/255, green: 0, blue: 96/255, alpha: 1.0) // #BA0060
+        static let grayLight = UIColor(red: 190/255, green: 190/255, blue: 190/255, alpha: 1.0) // #BEBEBE
+        static let grayDark = UIColor(red: 90/255, green: 90/255, blue: 90/255, alpha: 1.0)
     }
 
     public struct ButtonColors {
@@ -37,10 +37,10 @@ public class GlobalConstants {
     }
 
     public struct TextColors {
-        static let grayDark = UIColor(white: 90/255, alpha: 1.0) // #5A5A5A
-        static let grayDarker = UIColor(white: 50/255, alpha: 1.0) // #323232
-        static let black = UIColor.black // #000000
-        static let magenta = Colors.magentaBrand
+        public static let grayDark = UIColor(white: 90/255, alpha: 1.0) // #5A5A5A
+        public static let grayDarker = UIColor(white: 50/255, alpha: 1.0) // #323232
+        public static let black = UIColor.black // #000000
+        public static let magenta = Colors.magentaBrand
     }
 
 
