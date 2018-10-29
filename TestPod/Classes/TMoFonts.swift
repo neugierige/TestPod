@@ -13,56 +13,85 @@ public class TMoFonts {
         FontLoader.loadFontIfNeeded(fontName: name, fontExtension: fontExtension)
     }
 
-    public enum HFontSizes {
-        case h1Heading, h2Heading, h3Heading, h5Heading, h6Heading, h7Subheading
+    public enum HFonts {
+        case h1Heading, h2Heading, h3Heading, h4Heading, subheading1, subheading2
 
-        var style: GlobalConstants.TeleGroteskFontNames {
+        var style: String {
             switch self {
-            case .h1Heading, .h2Heading, .h3Heading, .h5Heading: return .fet
-            case .h6Heading, .h7Subheading: return .hal
+            case .h1Heading, .h2Heading: return GlobalConstants.TeleGroteskFontNames.ult.rawValue
+            case .h3Heading: return GlobalConstants.TeleGroteskFontNames.fet.rawValue
+            case .h4Heading: return GlobalConstants.TeleGroteskFontNames.hal.rawValue
+            case .subheading1: return ""
+            case .subheading2: return GlobalConstants.TeleGroteskFontNames.hal.rawValue
             }
         }
 
         var color: UIColor {
-            switch self {
-            case .h1Heading, .h2Heading, .h3Heading, .h5Heading: return GlobalConstants.TextColors.grayDarker
-            case .h6Heading: return GlobalConstants.TextColors.black
-            case .h7Subheading: return GlobalConstants.TextColors.grayDark
-            }
+            return GlobalConstants.TextColors.grayDarker
         }
 
         var pointSize: CGFloat {
             switch self {
             case .h1Heading: return 50
-            case .h2Heading: return 40
+            case .h2Heading: return 32
             case .h3Heading: return 32
-            case .h5Heading, .h6Heading, .h7Subheading: return 24
+            case .h4Heading: return 24
+            case .subheading1: return 18
+            case .subheading2: return 18
             }
         }
     }
 
-    public static func hFont(for size: HFontSizes) -> UIFont? {
-        loadFontIfNeeded(name: size.style.rawValue, fontExtension: "ttf")
-        return UIFont(name: size.style.rawValue, size: size.pointSize)
+    public static func hFont(for size: HFonts) -> UIFont? {
+        if size == .subheading1 {
+            return UIFont.boldSystemFont(ofSize: size.pointSize)
+        }
+        loadFontIfNeeded(name: size.style, fontExtension: "ttf")
+        return UIFont(name: size.style, size: size.pointSize)
     }
 
-    public enum ArialFontSizes: CGFloat {
-        case lead = 18
-        case regular = 16
-        case small = 14
-        case xsmall = 12
-        case legal = 10
+    public enum PFonts {
+        case lead, regular, small, xsmall, legal
+
+        var color: UIColor {
+            return GlobalConstants.TextColors.grayDark
+        }
+
+        var pointSize: CGFloat {
+            switch self {
+            case .lead: return 18
+            case .regular: return 16
+            case .small: return 12
+            case .xsmall: return 11
+            case .legal: return 10
+            }
+        }
     }
 
-    public struct ArialFontColors {
-        public static let pFont = GlobalConstants.TextColors.grayDark
-        public static let aFont = GlobalConstants.TextColors.magenta
+    public static func pFont(_ font: PFonts) -> UIFont {
+        return UIFont.systemFont(ofSize: font.pointSize)
     }
 
-    public static func arialFont(size: ArialFontSizes) -> UIFont? {
-        return UIFont(name: GlobalConstants.arialName, size: size.rawValue)
+    public enum AFonts {
+        case regular, small, xsmall, legal
+
+        var color: UIColor {
+            return GlobalConstants.TextColors.magenta
+        }
+
+        var pointSize: CGFloat {
+            switch self {
+            case .regular: return 16
+            case .small: return 12
+            case .xsmall: return 11
+            case .legal: return 10
+            }
+        }
     }
 
+    public static func aFont(_ font: AFonts) -> UIFont {
+        return UIFont.systemFont(ofSize: font.pointSize)
+    }
 }
 
 private class FontLoader {

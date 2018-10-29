@@ -52,6 +52,4 @@ public class GlobalConstants {
         case ult = "Tele-GroteskUlt"
     }
 
-    static let arialName = "ArialMT"
-
 }
