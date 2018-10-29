@@ -13,6 +13,7 @@ public class TMoFonts {
         FontLoader.loadFontIfNeeded(fontName: name, fontExtension: fontExtension)
     }
 
+    // H Fonts
     public enum HFonts {
         case h1Heading, h2Heading, h3Heading, h4Heading, subheading1, subheading2
 
@@ -24,10 +25,6 @@ public class TMoFonts {
             case .subheading1: return ""
             case .subheading2: return GlobalConstants.TeleGroteskFontNames.hal.rawValue
             }
-        }
-
-        var color: UIColor {
-            return GlobalConstants.TextColors.grayDarker
         }
 
         var pointSize: CGFloat {
@@ -50,12 +47,13 @@ public class TMoFonts {
         return UIFont(name: size.style, size: size.pointSize)
     }
 
+    public static let hFontColor: UIColor = {
+        return GlobalConstants.TextColors.grayDarker
+    }()
+
+    // p Fonts
     public enum PFonts {
         case lead, regular, small, xsmall, legal
-
-        var color: UIColor {
-            return GlobalConstants.TextColors.grayDark
-        }
 
         var pointSize: CGFloat {
             switch self {
@@ -72,12 +70,13 @@ public class TMoFonts {
         return UIFont.systemFont(ofSize: font.pointSize)
     }
 
+    public static let pFontColor: UIColor = {
+        return GlobalConstants.TextColors.grayDark
+    }()
+
+    // a Fonts
     public enum AFonts {
         case regular, small, xsmall, legal
-
-        var color: UIColor {
-            return GlobalConstants.TextColors.magenta
-        }
 
         var pointSize: CGFloat {
             switch self {
@@ -92,6 +91,10 @@ public class TMoFonts {
     public static func aFont(_ font: AFonts) -> UIFont {
         return UIFont.systemFont(ofSize: font.pointSize)
     }
+
+    public static let aFontColor: UIColor = {
+        return GlobalConstants.TextColors.magenta
+    }()
 }
 
 private class FontLoader {
