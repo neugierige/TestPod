@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Odw-iZ-PSn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Odw-iZ-PSn">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="596.09375" y="488.67187499999994"/>
         </scene>
-        <!--UIComponent Library-->
+        <!--FUSE iOS Native-->
         <scene sceneID="GwV-qa-Aek">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="wbW-j0-2hT" customClass="MasterViewController" customModule="TestPod_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +60,9 @@
                             <outlet property="delegate" destination="wbW-j0-2hT" id="Nlo-Gg-YUM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="UIComponent Library" id="YSL-Cj-XYX"/>
+                    <navigationItem key="navigationItem" title="FUSE iOS Native" id="YSL-Cj-XYX">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="7fW-zU-Ud5"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xH3-wy-Kqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,7 +73,7 @@
             <objects>
                 <navigationController id="IdS-Yn-WxI" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J1h-py-6Ji">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -101,7 +103,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gPx-K5-7z0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jwh-R8-oJs">
-                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
